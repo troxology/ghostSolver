@@ -1,7 +1,7 @@
 /*****************************************************************************
- * File: morseSolver.cpp
+ * File: asciiSolver.cpp
  *
- * Description: Take Morse code input and output the decoded message.
+ * Description: Take Ascii code input and output the decoded message.
  *
  * Author: Tim Troxler
  *
@@ -40,7 +40,7 @@ char ascii2char(const std::string& in)
     return (char)retVal;
 }
 
-// Morse code solver for a given string.
+// Ascii code solver for a given string.
 std::string stringSolver(const std::string& asciiMessage)
 {
     // Tokenize the encoded message
@@ -55,7 +55,7 @@ std::string stringSolver(const std::string& asciiMessage)
     return std::string(&ret[0], ret.size() * sizeof(char));
 }
 
-// Morse code solver for a file containing encoded text, one message per line.
+// Ascii code solver for a file containing encoded text, one message per line.
 void fileSolver(const std::string& filePath)
 {
     std::vector<std::string> messages;
